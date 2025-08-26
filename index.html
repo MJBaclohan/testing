@@ -1,11 +1,21 @@
-index.html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First GitHub Page</title>
+  <title>Interactive Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my website hosted on GitHub Pages.</p>
+  <h1>My Interactive Website</h1>
+  <p id="message">Click the button to see something happen:</p>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("message").innerText = "🎉 You clicked the button!";
+    }
+  </script>
 </body>
 </html>
